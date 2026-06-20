@@ -105,7 +105,7 @@ app.post("/midtrans-callback", async (req, res) => {
         createdAt: new Date(),
       };
 
-      const phone = "6285216956975";
+      const phone = process.env.PHONE; // nomor tujuan WA
 
       const imageUrl =
         `https://cruncher-viewpoint-condition.ngrok-free.dev/tmp/${orderId}.png`;
